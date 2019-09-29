@@ -1,0 +1,1 @@
+include ':app', ':syntaxprettify', ':jlatexmath', ':mathjax', ':fontbook', ':colorpicker'

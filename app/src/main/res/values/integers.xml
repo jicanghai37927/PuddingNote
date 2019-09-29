@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="composer_picture_fade_duration">300</integer>
+
+    <integer name="shortAnimTime">200</integer>
+    <integer name="animTime">300</integer>
+
+</resources>

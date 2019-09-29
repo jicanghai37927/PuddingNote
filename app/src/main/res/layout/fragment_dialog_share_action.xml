@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:clipToPadding="false"
+        android:hapticFeedbackEnabled="false"
+        android:orientation="vertical"
+        android:padding="12sp"
+        android:soundEffectsEnabled="false">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#f9f9f9"
+            app:cardElevation="0.5dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="108dp"
+                    android:clipToPadding="false"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:id="@+id/line_separator_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dadade"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/resolve_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="108dp"
+                    android:clipToPadding="false"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:foreground="?selectableItemBackground"
+            android:clickable="true"
+            app:cardBackgroundColor="#ffffff"
+            app:cardElevation="1dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/primary_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

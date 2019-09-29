@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textColorQuaternary" format="reference|color" />
+    <attr name="colorBorder" format="reference|color" />
+    <attr name="selectionColor" format="reference|color" />
+</resources>

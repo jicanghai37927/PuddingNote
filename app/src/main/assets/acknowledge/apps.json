@@ -1,0 +1,50 @@
+{
+  "list": [
+    {
+      "id": "com.jecelyin.editor.v2",
+      "name": "920编辑器",
+      "slogan": "免费、开源、永无广告的文本编辑器"
+    },
+    {
+      "id": "com.rhmsoft.edit",
+      "name": "QuickEdit 文本編輯器",
+      "slogan": "高效，穩定和全功能的文字編輯器"
+    },
+    {
+      "id": "jp.sblo.pandora.jota.plus",
+      "name": "Jota+",
+      "slogan": "最好的文本编辑器"
+    },
+    {
+      "id": "com.drakeet.purewriter",
+      "name": "纯纯写作",
+      "slogan": "绝不丢失内容编辑器"
+    },
+    {
+      "id": "me.tshine.easymark",
+      "name": "易码",
+      "slogan": "私人云笔记"
+    },
+    {
+      "id": "com.anybeen.mark.app",
+      "name": "印记云笔记",
+      "slogan": "记录令我感动的瞬间"
+    },
+    {
+      "id": "com.aor.droidedit",
+      "name": "DroidEdit",
+      "slogan": "a text and source code editor"
+    },
+    {
+      "id": "com.henrythompson.quoda",
+      "name": "Quoda",
+      "slogan": "a sophisticated easy to use source code editor"
+    },
+    {
+      "id": "com.paprbit.dcoder",
+      "name": "Dcoder",
+      "slogan": "a mobile coding IDE"
+    }
+
+  ]
+}

@@ -1,0 +1,191 @@
+apply plugin: 'com.android.application'
+apply plugin: 'AndResGuard'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.tencent.mm:AndResGuard-gradle-plugin:1.2.13'
+    }
+}
+
+android {
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = []
+            jniLibs.srcDir "src/main/libs"
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    compileSdkVersion 27
+
+    defaultConfig {
+        applicationId "com.haiyunshan.pudding"
+        versionCode 2000
+        versionName '2.0.0'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        minSdkVersion 22
+        targetSdkVersion 25
+        renderscriptTargetApi 25
+        renderscriptSupportModeEnabled true
+
+        ndk {
+            moduleName "libTextutils"         //生成的so文件名称
+        }
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources false // 纹理图片使用了getIdentifier，不要shrink资源，否则会被压缩
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            jniDebuggable false
+            minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources false
+            signingConfig signingConfigs.debug
+            renderscriptDebuggable true
+        }
+    }
+    productFlavors {
+    }
+
+    buildToolsVersion '27.0.3'
+
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.13'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation files('libs/commons-lang3-3.7.jar')
+    implementation files('libs/commons-io-2.6.jar')
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    implementation files('libs/juniversalchardet-1.0.3.jar')
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'jp.wasabeef:glide-transformations:3.3.0'
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    implementation files('libs/ftplet-api-1.1.1.jar')
+    implementation files('libs/ftpserver-core-1.1.1.jar')
+    implementation files('libs/log4j-1.2.17.jar')
+    implementation files('libs/mina-core-2.0.16.jar')
+    implementation files('libs/slf4j-api-1.7.21.jar')
+    implementation files('libs/slf4j-log4j12-1.7.21.jar')
+    implementation files('libs/tagsoup-1.2.1.jar')
+    implementation project(':mathjax')
+    implementation project(':syntaxprettify')
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation project(':fontbook')
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation project(':colorpicker')
+}
+
+andResGuard {
+
+    // mappingFile = file("./resource_mapping.txt")
+    mappingFile = null
+    use7zip = true
+    useSign = true
+
+    // 打开这个开关，会keep住所有资源的原始路径，只混淆资源的名字
+    keepRoot = false
+
+    whiteList = [
+            // for your icon
+            "R.drawable.icon",
+
+            // 纹理图片
+            "R.drawable.wl01",
+            "R.drawable.wl02",
+            "R.drawable.wl03",
+            "R.drawable.wl04",
+            "R.drawable.wl05",
+            "R.drawable.wl06",
+            "R.drawable.wl07",
+            "R.drawable.wl08",
+            "R.drawable.wl09",
+
+            // 边框
+            "R.drawable.bk01",
+            "R.drawable.bk02",
+            "R.drawable.bk03",
+            "R.drawable.bk04",
+            "R.drawable.bk05",
+
+            // for fabric
+            "R.string.com.crashlytics.*",
+
+            // for google-services
+            "R.string.google_app_id",
+            "R.string.gcm_defaultSenderId",
+            "R.string.default_web_client_id",
+            "R.string.ga_trackingId",
+            "R.string.firebase_database_url",
+            "R.string.google_api_key",
+            "R.string.google_crash_reporting_api_key"
+    ]
+
+    compressFilePattern = [
+            "*.png",
+            "*.jpg",
+            "*.jpeg",
+            "*.gif",
+    ]
+
+    sevenzip {
+        artifact = 'com.tencent.mm:SevenZip:1.2.13'
+        //path = "/usr/local/bin/7za"
+    }
+
+    /**
+     * 可选： 如果不设置则会默认覆盖assemble输出的apk
+     **/
+    // finalApkBackupPath = "${project.rootDir}/final.apk"
+
+    /**
+     * 可选: 指定v1签名时生成jar文件的摘要算法
+     * 默认值为“SHA-1”
+     **/
+    // digestalg = "SHA-256"
+}

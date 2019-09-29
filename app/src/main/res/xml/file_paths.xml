@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <external-files-path name="Pictures" path="Pictures" /> <!-- 对应getExternalFilesDir() -->
+    <external-path name="Album" path="Pictures" /> <!-- 对应Environment.getExternalStorageDirectory() -->
+
+</paths>

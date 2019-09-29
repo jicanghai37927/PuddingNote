@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".compose.ComposeFragment">
+
+    <!-- List -->
+
+    <com.haiyunshan.pudding.compose.widget.ComposeRecyclerView
+        android:id="@+id/recycler_list_view"
+        style="@style/Pudding.Compose.List">
+
+    </com.haiyunshan.pudding.compose.widget.ComposeRecyclerView>
+
+    <!-- Toolbar -->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Pudding.Compose.Toolbar">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Bottom Sheet -->
+
+    <fragment
+        android:id="@+id/composer_bottom_sheet_fragment"
+        class="com.haiyunshan.pudding.compose.BottomSheetFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+    <!-- Bottom Bar -->
+
+    <LinearLayout
+        android:id="@+id/composer_bottom_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/bottom_sheet_hightlight_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/composer_bottom_bar_size"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

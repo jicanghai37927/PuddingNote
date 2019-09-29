@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Pudding.iml" filepath="$PROJECT_DIR$/Pudding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/colorpicker/colorpicker.iml" filepath="$PROJECT_DIR$/colorpicker/colorpicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fontbook/fontbook.iml" filepath="$PROJECT_DIR$/fontbook/fontbook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jlatexmath/jlatexmath.iml" filepath="$PROJECT_DIR$/jlatexmath/jlatexmath.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mathjax/mathjax.iml" filepath="$PROJECT_DIR$/mathjax/mathjax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/syntaxprettify/syntaxprettify.iml" filepath="$PROJECT_DIR$/syntaxprettify/syntaxprettify.iml" />
+    </modules>
+  </component>
+</project>

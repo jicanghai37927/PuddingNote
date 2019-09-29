@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize">
+
+    <include
+        android:id="@+id/normal_bar"
+        layout="@layout/layout_format_normal_bar"/>
+
+    <include
+        android:id="@+id/edit_bar"
+        layout="@layout/layout_format_edit_bar"
+        android:visibility="invisible"/>
+
+</merge>

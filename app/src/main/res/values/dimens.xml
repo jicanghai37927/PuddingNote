@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="abc_action_bar_content_inset_material">16.0dip</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav">72.0dip</dimen>
+
+    <dimen name="common_divider_height">1.0dip</dimen>
+    <dimen name="common_divider_height_thin">0.5dip</dimen>
+    <dimen name="common_divider_height_thick">2.0dip</dimen>
+    <dimen name="common_divider_height_xthick">6.0dip</dimen>
+
+    <dimen name="common_hide_shadow_margin">-3.5dip</dimen>
+    <dimen name="elevation_card">1.0dip</dimen>
+    <dimen name="squat_item_image_height">90.0dip</dimen>
+    <dimen name="common_padding_large">20.0dip</dimen>
+    <dimen name="common_padding_smaller">5.0dip</dimen>
+    <dimen name="common_card_line_spacing_multiplier">1.0</dimen>
+    <dimen name="common_line_spacing_multiplier">1.12</dimen>
+    <dimen name="reading_list_preview_card_margin">5.0dip</dimen>
+    <dimen name="common_text_size_body_1">16.0sp</dimen>
+
+    <dimen name="qeb_size">48.0dip</dimen>
+    <dimen name="qeb_text_size">16.0sp</dimen>
+    <dimen name="qeb_text_horizontal_padding">16.0dip</dimen>
+    <dimen name="qeb_vertical_margin">0.0dip</dimen>
+    <dimen name="qeb_horizontal_margin">0.0dip</dimen>
+
+    <dimen name="list_margin_horizontal">8dp</dimen>
+
+    <dimen name="font_preview_height">144dp</dimen>
+    <dimen name="font_preview_padding">6dp</dimen>
+    <dimen name="bottom_bar_size">48dp</dimen>
+
+    <dimen name="font_item_check_size">48dp</dimen>
+
+    <dimen name="composer_bottom_sheet_size">320dp</dimen>
+    <dimen name="composer_bottom_bar_size">48dp</dimen>
+    <dimen name="format_item_padding">12dp</dimen>
+
+    <dimen name="color_panel_padding">18dp</dimen>
+    <dimen name="color_panel_width">84dp</dimen>
+    <dimen name="color_panel_height">168dp</dimen>
+
+    <dimen name="composer_paragraph_format_top_size">12dp</dimen>
+    <dimen name="composer_paragraph_format_separate_size">22dp</dimen>
+
+    <dimen name="format_card_height">200dp</dimen>
+    <dimen name="format_card_width">120dp</dimen>
+
+    <dimen name="format_frame_height">180dp</dimen>
+    <dimen name="format_frame_width">100dp</dimen>
+
+</resources>

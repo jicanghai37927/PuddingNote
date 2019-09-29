@@ -1,0 +1,198 @@
+{
+  "list": [
+    {
+      "name": "gson",
+      "developer": "Google",
+      "desc": "A Java serialization/deserialization library to convert Java Objects into JSON and back.",
+      "uri": "https://github.com/google/gson"
+    },
+    {
+      "name": "prettytime",
+      "developer": "OCPsoft",
+      "desc": "Social Style Date and Time Formatting for Java.",
+      "uri": "https://github.com/ocpsoft/prettytime"
+    },
+    {
+      "name": "logger",
+      "developer": "Orhan Obut",
+      "desc": "✔️ Simple, pretty and powerful logger for android.",
+      "uri": "https://github.com/orhanobut/logger"
+    },
+    {
+      "name": "RxJava",
+      "developer": "ReactiveX",
+      "desc": "A library for composing asynchronous and event-based programs using observable sequences for the Java VM.",
+      "uri": "https://github.com/ReactiveX/RxJava"
+    },
+    {
+      "name": "RxAndroid",
+      "developer": "ReactiveX",
+      "desc": "RxJava bindings for Android.",
+      "uri": "https://github.com/ReactiveX/RxAndroid"
+    },
+    {
+      "name": "PDFBox",
+      "developer": "Apache",
+      "desc": "The Apache PDFBox® library is an open source Java tool for working with PDF documents.",
+      "uri": "https://pdfbox.apache.org/"
+    },
+    {
+      "name": "Commons",
+      "developer": "Apache",
+      "desc": "Apache Commons is an Apache project focused on all aspects of reusable Java components.",
+      "uri": "https://commons.apache.org/"
+    },
+    {
+      "name": "RxPermissions",
+      "developer": "Thomas Bruyelle",
+      "desc": "Android runtime permissions powered by RxJava2.",
+      "uri": "https://github.com/tbruyelle/RxPermissions"
+    },
+    {
+      "name": "Bookworm",
+      "developer": "",
+      "desc": "CoolReader & FBReaderJ.",
+      "uri": "https://www.javatips.net/api/Bookworm-master/android/CoolReader/src/cn/itcreator/android/reader/util/BytesEncodingDetect.java"
+    },
+    {
+      "name": "jChardet",
+      "developer": "",
+      "desc": "jchardet is a java port of the source from mozilla's automatic charset detection algorithm. ",
+      "uri": "http://jchardet.sourceforge.net/"
+    },
+    {
+      "name": "juniversalchardet",
+      "developer": "",
+      "desc": "Java port of universalchardet.",
+      "uri": "http://code.google.com/p/juniversalchardet/"
+    },
+    {
+      "name": "glide",
+      "developer": "Bump Technologies",
+      "desc": "An image loading and caching library for Android focused on smooth scrolling.",
+      "uri": "https://github.com/bumptech/glide"
+    },
+    {
+      "name": "glide-transformations",
+      "developer": "Daichi Furiya",
+      "desc": "An Android transformation library providing a variety of image transformations for Glide.",
+      "uri": "https://github.com/wasabeef/glide-transformations"
+    },
+    {
+      "name": "android-gpuimage",
+      "developer": "CyberAgent",
+      "desc": "Android filters based on OpenGL (idea from GPUImage for iOS).",
+      "uri": "https://github.com/CyberAgent/android-gpuimage"
+    },
+    {
+      "name": "FtpServer",
+      "developer": "Apache",
+      "desc": "A complete and portable FTP server engine solution based on currently available open protocols. ",
+      "uri": "https://mina.apache.org/ftpserver-project/"
+    },
+    {
+      "name": "MarkdownView",
+      "developer": "Tiago",
+      "desc": "Android library to display markdown text.",
+      "uri": "https://github.com/tiagohm/MarkdownView"
+    },
+    {
+      "name": "flexmark-java",
+      "developer": "Vladimir Schneider",
+      "desc": "Java Markdown parser with source level AST. ",
+      "uri": "https://github.com/vsch/flexmark-java"
+    },
+    {
+      "name": "RxMarkdown",
+      "developer": "yydcdut",
+      "desc": "Markdown for Android, supports TextView && EditText (Live Preview), supports code high light.",
+      "uri": "https://github.com/yydcdut/RxMarkdown"
+    },
+    {
+      "name": "TagSoup",
+      "developer": "John Cowan",
+      "desc": "A SAX-compliant parser written in Java.",
+      "uri": "http://vrici.lojban.org/~cowan/XML/tagsoup/"
+    },
+    {
+      "name": "jsoup",
+      "developer": "Jonathan Hedley",
+      "desc": "Java HTML Parser",
+      "uri": "https://jsoup.org/"
+    },
+    {
+      "name": "java-syntax-highlighter",
+      "developer": "Chan Wai Shing",
+      "desc": "Java port of SyntaxHighlighter",
+      "uri": "https://code.google.com/p/java-syntax-highlighter"
+    },
+    {
+      "name": "java-prettify",
+      "developer": "Mike Samuel",
+      "desc": "Java port of Google Prettify",
+      "uri": "https://code.google.com/p/java-prettify"
+    },
+    {
+      "name": "jEdit",
+      "developer": "",
+      "desc": "jEdit is a mature programmer's text editor.",
+      "uri": "http://jedit.org/"
+    },
+    {
+      "name": "MathJax",
+      "developer": "",
+      "desc": "Beautiful math in all browsers.",
+      "uri": "https://github.com/mathjax/MathJax"
+    },
+    {
+      "name": "MathView",
+      "developer": "Brian Lee",
+      "desc": "A library for displaying math formula in Android apps.",
+      "uri": "https://github.com/kexanie/MathView"
+    },
+    {
+      "name": "MathJax-Android",
+      "developer": "Tim Freiheit",
+      "desc": "MathJax Wrapper for Android.",
+      "uri": "https://github.com/timfreiheit/MathJax-Android"
+    },
+    {
+      "name": "jlatexmath",
+      "developer": "opencollab",
+      "desc": "A Java API to render LaTeX.",
+      "uri": "https://github.com/opencollab/jlatexmath"
+    },
+    {
+      "name": "jlatexmath-android",
+      "developer": "Maksim Bartosh",
+      "desc": "aJLaTeXMath Library - Displays LaTeX commands in android OS.",
+      "uri": "https://github.com/mksmbrtsh/jlatexmath-android"
+    },
+    {
+      "name": "JLaTexMath-andriod",
+      "developer": "sixgodIT",
+      "desc": "JLaTexMath for Android 完美支持、数学、物理、化学公式、汉字解析、图文混排、Mathml、LaTex.",
+      "uri": "https://github.com/sixgodIT/JLaTexMath-andriod"
+    },
+    {
+      "name": "TeXSyntax",
+      "developer": "",
+      "desc": "TeX Commands available in MathJax.",
+      "uri": "http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm"
+    },
+    {
+      "name": "butterknife",
+      "developer": "Jake Wharton",
+      "desc": "Bind Android views and callbacks to fields and methods. ",
+      "uri": "https://github.com/JakeWharton/butterknife"
+    },
+    {
+      "name": "EventBus",
+      "developer": "greenrobot",
+      "desc": "Event bus for Android and Java that simplifies communication between Activities, Fragments, Threads, Services, etc. Less code, better quality.",
+      "uri": "http://greenrobot.org/eventbus/"
+    }
+
+
+  ]
+}

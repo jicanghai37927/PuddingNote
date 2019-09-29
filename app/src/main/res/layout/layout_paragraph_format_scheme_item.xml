@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FormatItem"
+    android:paddingRight="4dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/FormatItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版式"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_action"
+        style="@style/FormatItemHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_right_grey_500_24dp"/>
+</LinearLayout>

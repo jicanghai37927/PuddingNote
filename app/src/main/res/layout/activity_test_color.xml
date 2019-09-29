@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".test.TestColorActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/edit_paragraph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="《赤壁赋》是北宋文学家苏轼创作的一篇赋，作于宋神宗元丰五年（1082）贬谪黄州（今湖北黄冈）时。此赋记叙了作者与朋友们月夜泛舟游赤壁的所见所感，以作者的主观感受为线索，通过主客问答的形式，反映了作者由月夜泛舟的舒畅，到怀古伤今的悲咽，再到精神解脱的达观。全赋在布局与结构安排中映现了其独特的艺术构思，情韵深致、理意透辟，在中国文学上有着很高的文学地位，并对之后的赋、散文、诗产生了重大影响。"
+            android:textSize="24sp"
+            android:gravity="top|left"
+            android:lineSpacingMultiplier="1"
+            android:minLines="1"
+            android:textCursorDrawable="@drawable/common_cursor"
+            android:textColor="#000000"
+            android:background="#ff00ff"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"/>
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:background="#0f000000" />
+
+
+        <com.haiyunshan.net.margaritov.preference.colorpicker.ColorPickerView
+            android:id="@+id/color_picker_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

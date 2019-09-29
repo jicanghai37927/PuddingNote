@@ -1,0 +1,95 @@
+{
+  "list": [
+    {
+      "id":   "chinese",
+      "name": "中国风",
+      "uri":  "bk01",
+      "scale": 0.4,
+      "margin": {
+        "top": 12,
+        "left": 12,
+        "bottom": 12,
+        "right": 12
+      },
+      "padding": {
+        "top": 36,
+        "left": 16,
+        "bottom": 36,
+        "right": 16
+      }
+    },
+    {
+      "id":   "europe",
+      "name": "欧式",
+      "uri":  "bk02",
+      "scale": 0.3,
+      "margin": {
+        "top": 12,
+        "left": 12,
+        "bottom": 12,
+        "right": 12
+      },
+      "padding": {
+        "top": 24,
+        "left": 24,
+        "bottom": 24,
+        "right": 24
+      }
+    },
+    {
+      "id":   "brief",
+      "name": "简约",
+      "uri":  "bk03",
+      "scale": 1.0,
+      "margin": {
+        "top": 18,
+        "left": 18,
+        "bottom": 18,
+        "right": 18
+      },
+      "padding": {
+        "top": 12,
+        "left": 12,
+        "bottom": 12,
+        "right": 12
+      }
+    },
+    {
+      "id":   "flower",
+      "name": "花纹",
+      "uri":  "bk04",
+      "scale": 0.5,
+      "margin": {
+        "top": 12,
+        "left": 12,
+        "bottom": 12,
+        "right": 12
+      },
+      "padding": {
+        "top": 28,
+        "left": 28,
+        "bottom": 28,
+        "right": 28
+      }
+    },
+    {
+      "id":   "ancient",
+      "name": "古风",
+      "uri":  "bk05",
+      "scale": 0.5,
+      "margin": {
+        "top": 12,
+        "left": 12,
+        "bottom": 12,
+        "right": 12
+      },
+      "padding": {
+        "top": 18,
+        "left": 22,
+        "bottom": 18,
+        "right": 22
+      }
+    }
+  ]
+
+}

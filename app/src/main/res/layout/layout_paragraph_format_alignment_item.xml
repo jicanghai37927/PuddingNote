@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FormatItem"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:clickable="false">
+
+    <com.haiyunshan.pudding.widget.CheckableImageView
+        android:id="@+id/btn_align_normal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/selector_format_check_bg"
+        android:gravity="center"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_align_left" />
+
+    <com.haiyunshan.pudding.widget.CheckableImageView
+        android:id="@+id/btn_align_center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/selector_format_check_bg"
+        android:gravity="center"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_align_center" />
+
+    <com.haiyunshan.pudding.widget.CheckableImageView
+        android:id="@+id/btn_align_opposite"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/selector_format_check_bg"
+        android:gravity="center"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_align_right" />
+
+</LinearLayout>

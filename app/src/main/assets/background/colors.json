@@ -1,0 +1,88 @@
+{
+  "list": [
+    {
+      "id": "usual",
+      "name": "日常",
+      "fg": "#333333",
+      "bg": "#f2f2f2",
+      "uri": ""
+    },
+    {
+      "id": "eye_shield",
+      "name": "护眼",
+      "fg": "#4e4942",
+      "bg": "#faf5ed",
+      "uri": ""
+    },
+    {
+      "id": "fresh",
+      "name": "清新",
+      "fg": "#484d41",
+      "bg": "#ceebce",
+      "uri": ""
+    },
+    {
+      "id": "pure_white",
+      "name": "纯白",
+      "fg": "#000000",
+      "bg": "#ffffff",
+      "uri": ""
+    },
+    {
+      "id": "light_yellow",
+      "name": "米黄",
+      "fg": "#313031",
+      "bg": "#f7e7de",
+      "uri": ""
+    },
+    {
+      "id": "paper_white",
+      "name": "白纸",
+      "fg": "#312c29",
+      "bg": "#f7e3d6",
+      "uri": ""
+    },
+    {
+      "id": "pink",
+      "name": "粉色",
+      "fg": "#312c2a",
+      "bg": "#ffe7ef",
+      "uri": ""
+    },
+    {
+      "id": "paper_yellow",
+      "name": "纸黄色",
+      "fg": "#311400",
+      "bg": "#dec79c",
+      "uri": ""
+    },
+    {
+      "id": "navy_blue",
+      "name": "海军蓝",
+      "fg": "#cee7f7",
+      "bg": "#08598c",
+      "uri": ""
+    },
+    {
+      "id": "dark_green",
+      "name": "暗绿",
+      "fg": "#efebd6",
+      "bg": "#104139",
+      "uri": ""
+    },
+    {
+      "id": "dark_blue",
+      "name": "黛蓝",
+      "fg": "#efe3e7",
+      "bg": "#21495a",
+      "uri": ""
+    },
+    {
+      "id": "dark_brown",
+      "name": "深褐",
+      "fg": "#efe3e8",
+      "bg": "#212421",
+      "uri": ""
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+res path mapping:
+    res/drawable-xxhdpi-v4 -> res/drawable-xxhdpi-v4
+    

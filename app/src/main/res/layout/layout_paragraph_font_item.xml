@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#ff0000">
+
+    <TextView
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#ff0000"
+        android:clickable="true"
+        android:duplicateParentState="false"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center"
+        android:minWidth="80dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="@string/btn_delete"
+        android:textColor="@color/action_bar_text_color"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/font_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:duplicateParentState="false"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:id="@+id/iv_checked"
+            android:layout_width="@dimen/font_item_check_size"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_check_orange_500_24dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/font_item_check_size"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackgroundBorderless"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_remove_circle_red_a400_24dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

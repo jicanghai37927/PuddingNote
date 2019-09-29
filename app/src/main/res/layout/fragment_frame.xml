@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background_color"
+    android:orientation="vertical"
+    tools:context=".compose.FrameFragment">
+
+
+    <com.haiyunshan.pudding.widget.FormatTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_size"
+        android:background="@color/primary_color"
+        android:elevation="1.0dp">
+
+    </com.haiyunshan.pudding.widget.FormatTitleBar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

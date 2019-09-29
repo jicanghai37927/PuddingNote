@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FormatItem"
+    android:layout_width="match_parent"
+    android:clickable="false">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/FormatItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大小" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        style="@style/FormatItemValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="36磅" />
+
+
+    <ImageView
+        android:id="@+id/iv_minus"
+        style="@style/FormatItemButtonMinus"
+        android:layout_width="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/iv_plus"
+        style="@style/FormatItemButtonPlus"
+        android:layout_width="wrap_content"
+        />
+</LinearLayout>

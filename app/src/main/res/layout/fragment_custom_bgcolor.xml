@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background_color"
+    android:orientation="vertical"
+    tools:context=".compose.ColorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:elevation="1.0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.haiyunshan.pudding.widget.FormatTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_bar_size">
+
+        </com.haiyunshan.pudding.widget.FormatTitleBar>
+
+        <RadioGroup
+            android:id="@+id/rg_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal"
+            android:checkedButton="@id/rb_usual">
+
+            <RadioButton
+                android:id="@+id/rb_usual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_format_radio_bg"
+                android:button="@null"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:text="预置"
+                android:textColor="@color/selector_format_radio_text"
+                android:foreground="?selectableItemBackground"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_plate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_format_radio_bg"
+                android:button="@null"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:text="颜色"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/selector_format_radio_text"
+                android:foreground="?selectableItemBackground"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_format_radio_bg"
+                android:button="@null"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:text="调色板"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/selector_format_radio_text"
+                android:foreground="?selectableItemBackground"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment
+            android:name="com.haiyunshan.pudding.compose.background.BGColorPickerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="color_picker" />
+
+        <fragment
+            android:name="com.haiyunshan.pudding.compose.background.BGColorPlateFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="color_plate" />
+
+        <fragment
+            android:name="com.haiyunshan.pudding.compose.background.BGColorUsualFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="color_usual" />
+
+    </FrameLayout>
+
+</LinearLayout>

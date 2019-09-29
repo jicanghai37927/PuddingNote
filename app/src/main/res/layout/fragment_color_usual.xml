@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background_color"
+    tools:context=".compose.ColorUsualFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/color_panel_padding">
+
+        <LinearLayout
+            android:id="@+id/color_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <com.haiyunshan.pudding.widget.ColorView
+            android:id="@+id/btn_no_color"
+            android:layout_width="@dimen/color_panel_width"
+            android:layout_height="@dimen/color_panel_height"
+            android:layout_marginLeft="@dimen/color_panel_padding"
+            android:background="@drawable/shape_color_panel_bg"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_no_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="无填充"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </com.haiyunshan.pudding.widget.ColorView>
+
+        <FrameLayout
+            android:id="@+id/btn_color_panel"
+            android:layout_width="@dimen/color_panel_width"
+            android:layout_height="@dimen/color_panel_height"
+            android:layout_marginLeft="@dimen/color_panel_padding"
+            android:background="@drawable/shape_color_panel_bg"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_color_panel" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_color_panel_btn"
+                android:duplicateParentState="true" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</HorizontalScrollView>
+

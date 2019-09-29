@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haiyunshan.pudding.compose.widget.ParagraphEditLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Pudding.Compose.Item">
+
+    <android.support.v7.widget.CardView
+        style="@style/Pudding.Compose.Card">
+
+        <com.haiyunshan.pudding.compose.widget.ParagraphEditText
+            android:id="@+id/edit_paragraph"
+            style="@style/Pudding.Compose.Paragraph"/>
+
+    </android.support.v7.widget.CardView>
+
+</com.haiyunshan.pudding.compose.widget.ParagraphEditLayout>

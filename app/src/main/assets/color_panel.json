@@ -1,0 +1,73 @@
+{
+  "color": [
+    [
+    	"#56c1ff", 
+    	"#00a2ff", 
+    	"#0076ba", 
+    	"#004d80"
+    ],
+    [
+    	"#73fdea", 
+    	"#16e7cf", 
+    	"#00a89d", 
+    	"#017b76"
+    ],
+    [
+    	"#88fa4e", 
+    	"#61d836", 
+    	"#1db100", 
+    	"#017100"
+    ],
+    [
+    	"#fffc66", 
+    	"#fae232", 
+    	"#f8ba00", 
+    	"#ff9300"
+    ],
+    [
+    	"#ff968d", 
+    	"#ff644e", 
+    	"#ee220c", 
+    	"#b51700"
+    ],
+    [
+    	"#ff8dc6", 
+    	"#ef5fa7", 
+    	"#cb297b", 
+    	"#99195e"
+    ],
+    [
+    	"#ffffff"
+    ]
+    ,
+    [
+    	"#d6d5d5"
+    ]
+    ,
+    [
+    	"#929292"
+    ]
+    ,
+    [
+    	"#5e5e5e"
+    ]
+    ,
+    [
+    	"#000000"
+    ]
+  ],
+
+  "plate": [
+    ["#ff082938", "#ff021543", "#ff0d022c", "#ff21022e", "#ff290215", "#ff470202", "#ff461303", "#ff422704", "#ff422e05", "#ff534f0a", "#ff3e410c", "#ff1d2d0d"],
+    ["#ff123c51", "#ff0a2264", "#ff140540", "#ff300945", "#ff42081f", "#ff6d0606", "#ff661d06", "#ff653909", "#ff63430a", "#ff7a7414", "#ff5b6313", "#ff2b4617"],
+    ["#ff1f5a7a", "#ff153197", "#ff200d60", "#ff4c1066", "#ff630f2c", "#ffa2110d", "#ff992b0f", "#ff965612", "#ff946815", "#ffb6b024", "#ff8a9822", "#ff406823"],
+    ["#ff2c7aa2", "#ff1f43c9", "#ff2a1680", "#ff651a8c", "#ff84143f", "#ffd71a16", "#ffcc3c16", "#ffc7711b", "#ffc68c1f", "#fff2e933", "#ffb7c82f", "#ff578c2e"],
+    ["#ff3893cd", "#ff274efa", "#ff3b1ea1", "#ff8424ad", "#ffa5194c", "#fff12922", "#fff25320", "#fff59926", "#fff6bb2b", "#fffefb4b", "#ffd1e941", "#ff67ac39"],
+    ["#ff48bbf9", "#ff3373f9", "#ff4a2ee2", "#ffac34eb", "#ffda2668", "#fff24a47", "#fff46f40", "#fff6a43f", "#fff8c042", "#fffdf666", "#ffdeec5f", "#ff88cb55"],
+    ["#ff4fcdfa", "#ff6395fb", "#ff723af9", "#ffc440f9", "#ffe45a8d", "#fff47772", "#fff5936e", "#fff6ba6b", "#fff9d06b", "#fffefa8b", "#ffe6f184", "#ffa4d87e"],
+    ["#ff89defb", "#ff99b8fc", "#ffa077fa", "#ffd87bfb", "#ffee91b3", "#fff6a3a0", "#fff8b79d", "#fffad19c", "#fffbde9d", "#fffefbb0", "#ffeff6ad", "#ffc3e5a8"],
+    ["#ffc1edfc", "#ffcadbfc", "#ffcfbdfc", "#ffebbcfc", "#fff6c8d9", "#fffad2d0", "#fffbdbcf", "#fffce8cd", "#fffdeecd", "#fffefcd8", "#fff6f9d5", "#ffd8e8cb"],
+    ["#ffedfaff", "#fff1f5ff", "#fff2ecfe", "#fffaecfe", "#fffeeff4", "#fffef2f1", "#fffef5f1", "#fffef8f1", "#fffefaf0", "#fffffef3", "#fffdfef3", "#fff7fdf4"],
+    ["#ffffffff", "#ffe6e6e6", "#ffcdcdcd", "#ffb3b3b3", "#ff9a9a9a", "#ff808080", "#ff666666", "#ff4d4d4d", "#ff343434", "#ff1a1a1a", "#ff000000", "#00000000"]
+  ]
+}

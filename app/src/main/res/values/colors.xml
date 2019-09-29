@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary_color">#ffffbb00</color>
+    <color name="primary_color_dark">#fff99f00</color>
+    <color name="accent_color">#ff41b83a</color>
+    <color name="window_background_color">#ffe6e6e6</color>
+
+    <color name="material_gray">#8a000000</color>
+    <color name="action_mode_background_color">#ffffffff</color>
+    <color name="action_bar_text_color">#ffffffff</color>
+
+    <color name="primary_text_color">#de000000</color>
+
+    <color name="ic_launcher_background">#ffffffff</color>
+
+    <color name="common_background_color">#ffe6e6e6</color>
+    <color name="common_white_darker">#cdffffff</color>
+    <color name="common_white_lighter">#26ffffff</color>
+    <color name="common_white_normal">#70ffffff</color>
+    <color name="common_border_light_theme">#20000000</color>
+    <color name="common_black">#ff000000</color>
+    <color name="common_black_light">#4d000000</color>
+    <color name="common_black_darker">#cd000000</color>
+    <color name="common_green_selection_light_theme">#ff24eda9</color>
+
+    <color name="bottom_sheet_hightlight_grey">#0f000000</color>
+
+</resources>

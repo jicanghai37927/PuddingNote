@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background_color"
+    android:orientation="vertical"
+    tools:context=".compose.BackgroundFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:elevation="1.0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.haiyunshan.pudding.widget.FormatTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_bar_size">
+
+        </com.haiyunshan.pudding.widget.FormatTitleBar>
+
+        <RadioGroup
+            android:id="@+id/rg_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:checkedButton="@id/rb_color"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/rb_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_format_radio_bg"
+                android:button="@null"
+                android:foreground="?selectableItemBackground"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:text="颜色"
+                android:textColor="@color/selector_format_radio_text"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_texture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/selector_format_radio_bg"
+                android:button="@null"
+                android:foreground="?selectableItemBackground"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="4dp"
+                android:text="纹理"
+                android:textColor="@color/selector_format_radio_text"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment
+            android:name="com.haiyunshan.pudding.compose.BGTextureFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="bg_texture" />
+
+        <fragment
+            android:name="com.haiyunshan.pudding.compose.BGColorFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="bg_color" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

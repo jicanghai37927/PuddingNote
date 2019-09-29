@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/composer_bottom_sheet_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/bottom_sheet_hightlight_grey" />
+
+    <FrameLayout
+        android:id="@+id/composer_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/composer_bottom_sheet_size">
+
+    </FrameLayout>
+</LinearLayout>

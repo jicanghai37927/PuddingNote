@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haiyunshan.pudding.widget.ColorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/color_panel_width"
+    android:layout_height="@dimen/color_panel_height"
+    android:layout_marginLeft="@dimen/color_panel_padding">
+
+</com.haiyunshan.pudding.widget.ColorLayout>

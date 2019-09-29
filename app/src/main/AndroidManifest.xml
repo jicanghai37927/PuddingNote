@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haiyunshan.pudding">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/PuddingAppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.haiyunshan.pudding.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".NoteActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ComposeActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".AuthorActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustNothing" />
+        <activity
+            android:name=".TypefaceActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".TypefacePreviewActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:enabled="true"
+            android:icon="@mipmap/ic_fontbook"
+            android:label="@string/font_book"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:scheme="file" />
+                <data
+                    android:host="*"
+                    android:mimeType="application/x-font-ttf"
+                    android:scheme="file" />
+                <data
+                    android:host="*"
+                    android:mimeType="application/x-font-truetype"
+                    android:scheme="file" />
+                <data android:pathPattern=".*\\.ttf" />
+                <data android:pathPattern=".*\\..*\\.ttf" />
+                <data android:pathPattern=".*\\..*\\..*\\.ttf" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.ttf" />
+                <data android:pathPattern=".*\\.TTF" />
+                <data android:pathPattern=".*\\..*\\.TTF" />
+                <data android:pathPattern=".*\\..*\\..*\\.TTF" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.TTF" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:scheme="file" />
+                <data
+                    android:host="*"
+                    android:mimeType="application/x-font-otf"
+                    android:scheme="file" />
+                <data
+                    android:host="*"
+                    android:mimeType="application/x-font-opentype"
+                    android:scheme="file" />
+                <data android:pathPattern=".*\\.otf" />
+                <data android:pathPattern=".*\\..*\\.otf" />
+                <data android:pathPattern=".*\\..*\\..*\\.otf" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.otf" />
+                <data android:pathPattern=".*\\.OTF" />
+                <data android:pathPattern=".*\\..*\\.OTF" />
+                <data android:pathPattern=".*\\..*\\..*\\.OTF" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.OTF" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewerActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:enabled="false"
+            android:icon="@mipmap/ic_viewer"
+            android:label="@string/title_viewer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:scheme="file" />
+                <data
+                    android:host="*"
+                    android:mimeType="text/plain"
+                    android:scheme="file" />
+                <data android:mimeType="text/plain" />
+                <data android:pathPattern=".*\\.txt" />
+                <data android:pathPattern=".*\\..*\\.txt" />
+                <data android:pathPattern=".*\\..*\\..*\\.txt" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.txt" />
+                <data android:pathPattern=".*\\.TXT" />
+                <data android:pathPattern=".*\\..*\\.TXT" />
+                <data android:pathPattern=".*\\..*\\..*\\.TXT" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.TXT" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:scheme="file" />
+                <data
+                    android:host="*"
+                    android:mimeType="text/html"
+                    android:scheme="file" />
+                <data android:mimeType="text/plain" />
+                <data android:pathPattern=".*\\.htm" />
+                <data android:pathPattern=".*\\..*\\.htm" />
+                <data android:pathPattern=".*\\..*\\..*\\.htm" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.htm" />
+                <data android:pathPattern=".*\\.HTM" />
+                <data android:pathPattern=".*\\..*\\.HTM" />
+                <data android:pathPattern=".*\\..*\\..*\\.HTM" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.HTM" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:scheme="file" />
+                <data
+                    android:host="*"
+                    android:mimeType="text/html"
+                    android:scheme="file" />
+                <data android:mimeType="text/plain" />
+                <data android:pathPattern=".*\\.html" />
+                <data android:pathPattern=".*\\..*\\.html" />
+                <data android:pathPattern=".*\\..*\\..*\\.html" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.html" />
+                <data android:pathPattern=".*\\.HTML" />
+                <data android:pathPattern=".*\\..*\\.HTML" />
+                <data android:pathPattern=".*\\..*\\..*\\.HTML" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.HTML" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:scheme="file" />
+                <data
+                    android:host="*"
+                    android:mimeType="application/x-latex"
+                    android:scheme="file" />
+                <data android:mimeType="text/plain" />
+                <data android:pathPattern=".*\\.tex" />
+                <data android:pathPattern=".*\\..*\\.tex" />
+                <data android:pathPattern=".*\\..*\\..*\\.tex" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.tex" />
+                <data android:pathPattern=".*\\.TEX" />
+                <data android:pathPattern=".*\\..*\\.TEX" />
+                <data android:pathPattern=".*\\..*\\..*\\.TEX" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.TEX" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:scheme="file" />
+                <data
+                    android:host="*"
+                    android:mimeType="application/mathml+xml"
+                    android:scheme="file" />
+                <data android:mimeType="text/plain" />
+                <data android:pathPattern=".*\\.mathml" />
+                <data android:pathPattern=".*\\..*\\.mathml" />
+                <data android:pathPattern=".*\\..*\\..*\\.mathml" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.mathml" />
+                <data android:pathPattern=".*\\.MATHML" />
+                <data android:pathPattern=".*\\..*\\.MATHML" />
+                <data android:pathPattern=".*\\..*\\..*\\.MATHML" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.MATHML" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:scheme="file" />
+                <data
+                    android:host="*"
+                    android:mimeType="application/mathml+xml"
+                    android:scheme="file" />
+                <data android:mimeType="text/plain" />
+                <data android:pathPattern=".*\\.mml" />
+                <data android:pathPattern=".*\\..*\\.mml" />
+                <data android:pathPattern=".*\\..*\\..*\\.mml" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.mml" />
+                <data android:pathPattern=".*\\.MML" />
+                <data android:pathPattern=".*\\..*\\.MML" />
+                <data android:pathPattern=".*\\..*\\..*\\.MML" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.MML" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CoderActivity"
+            android:enabled="false"
+            android:icon="@mipmap/ic_coder"
+            android:label="@string/title_coder"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="text/*"
+                    android:scheme="file" />
+                <data android:mimeType="application/sql" />
+                <data android:mimeType="application/php" />
+                <data android:mimeType="application/x-php" />
+                <data android:mimeType="application/x-javascript" />
+                <data android:mimeType="application/javascript" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FtpServerActivity" />
+        <activity
+            android:name=".AcknowledgeActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".HelpActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity android:name=".test.TestSpanActivity" />
+        <activity android:name=".test.TestRxJavaActivity" />
+        <activity android:name=".test.TestDialogFragmentActivity" >
+
+        </activity>
+        <activity android:name=".test.TestMiscActivity" />
+        <activity
+            android:name=".test.TestProcessTextActivity"
+            android:enabled="false"
+            android:label="记录"
+            android:theme="@style/NoTitleTranslucentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".test.TestWebViewActivity" />
+        <activity android:name=".test.TestHtmlActivity" />
+        <activity android:name=".test.TestJLaTeXMathActivity" />
+        <activity android:name=".test.TestFragmentActivity" />
+        <activity
+            android:name=".test.TestColorActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity android:name=".MoreActivity" />
+        <activity android:name=".ShareActivity"></activity>
+    </application>
+
+</manifest>
